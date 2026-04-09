@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:text="Sensor Data"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#5E4B8B"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- SUBTITLE -->
+        <TextView
+            android:text="Real-time monitoring"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ACCELEROMETER CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Accelerometer"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X-Axis" />
+            <TextView
+                android:id="@+id/xValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y-Axis" />
+            <TextView
+                android:id="@+id/yValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z-Axis" />
+            <TextView
+                android:id="@+id/zValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"/>
+
+        </LinearLayout>
+
+        <!-- LIGHT SENSOR CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Light Sensor"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Illuminance"/>
+            <TextView
+                android:id="@+id/lightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 lx"/>
+
+        </LinearLayout>
+
+        <!-- PROXIMITY SENSOR CARD -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Proximity Sensor"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"/>
+            <TextView
+                android:id="@+id/proximityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 cm"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
